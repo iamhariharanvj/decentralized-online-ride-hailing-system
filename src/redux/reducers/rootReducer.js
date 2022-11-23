@@ -1,8 +1,8 @@
 import { combineReducers } from 'redux';
-import tokenReducer from './tokenReducer';
+import riderReducer from './riderReducer';
 
 const rootReducer = combineReducers({
-  token: tokenReducer
+  rider: riderReducer
 });
 
 export default rootReducer;

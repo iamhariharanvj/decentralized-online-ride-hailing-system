@@ -1,0 +1,7 @@
+export const LOGIN_RIDER = 'LOGIN_RIDER';
+export const LOGOUT_RIDER = 'LOGOUT_RIDER';
+
+export const ENTER_PICKUP = 'ENTER_PICKUP';
+export const ENTER_DROPOFF = 'ENTER_DROPOFF';
+
+export const CHANGE_DISTANCE = 'CHANGE_DISTANCE';

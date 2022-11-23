@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
+import { Provider } from 'react-redux';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import Home from './pages/Home';
+import store from './redux/store';
 import NotFound from './pages/NotFound';
 import Rider from './pages/Rider'
 function App() {
@@ -15,13 +16,15 @@ function App() {
   },[isMetaEnabled])
 
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path = '/rider/' element={<Rider />} />
-        <Route path='*' element={<NotFound />} />
-      </Routes>
-    </BrowserRouter>
+    <Provider store={store}>
+      <BrowserRouter>
+        <Routes>
+          <Route path='/' element={<Rider />} />
+          <Route path = '/rider/' element={<Rider />} />
+          <Route path='*' element={<NotFound />} />
+        </Routes>
+      </BrowserRouter>
+    </Provider>
   );
 }
 
