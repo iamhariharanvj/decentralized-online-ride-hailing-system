@@ -4,6 +4,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import store from './redux/store';
 import NotFound from './pages/NotFound';
 import Rider from './pages/Rider'
+import Driver from './pages/Driver';
 function App() {
 
   //Verify MetaMask Extension Installation
@@ -19,7 +20,7 @@ function App() {
     <Provider store={store}>
       <BrowserRouter>
         <Routes>
-          <Route path='/' element={<Rider />} />
+          <Route path='/driver' element={<Driver />} />
           <Route path = '/rider/' element={<Rider />} />
           <Route path='*' element={<NotFound />} />
         </Routes>
@@ -29,4 +30,3 @@ function App() {
 }
 
 export default App;
-

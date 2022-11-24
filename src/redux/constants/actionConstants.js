@@ -5,3 +5,6 @@ export const ENTER_PICKUP = 'ENTER_PICKUP';
 export const ENTER_DROPOFF = 'ENTER_DROPOFF';
 
 export const CHANGE_DISTANCE = 'CHANGE_DISTANCE';
+
+export const LOGIN_DRIVER = 'LOGIN_DRIVER';
+export const LOGOUT_DRIVER = 'LOGOUT_DRIVER';

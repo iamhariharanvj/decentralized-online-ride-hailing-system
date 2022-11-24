@@ -53,7 +53,7 @@ const Map = () => {
     return marker1;    
 }
 
-  return <div className={style.wrapper} id='mapbox' ></div>
+  return <div className='h-screen w-screen absolute' id='mapbox' ></div>
 }
 
 export default Map
